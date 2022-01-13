@@ -43,12 +43,11 @@ Resources:
           DomainName: !GetAtt S3Bucket.DomainName
           S3OriginConfig:
             # Restricting Bucket access through an origin access identity
-            OriginAccessIdentity: 
-              Fn::Sub: 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
-        Enabled: 'true'
+            OriginAccessIdentity: !Sub: 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
+        Enabled: true
         DefaultRootObject: index.html
         DefaultCacheBehavior:
-          Compress: 'true'
+          Compress: true
           AllowedMethods:
             - GET
             - HEAD
