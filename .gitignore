@@ -3,3 +3,5 @@
 site/build/
 site/node_modules/
 site/.eslintcache
+website/build/
+website/node_modules/
