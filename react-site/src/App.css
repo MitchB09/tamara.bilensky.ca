@@ -1,0 +1,17 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  width: 90%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.content {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}

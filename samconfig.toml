@@ -9,3 +9,14 @@ region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 parameter_overrides = "Stage=\"prod\""
+
+[dev]
+[dev.deploy]
+[dev.deploy.parameters]
+stack_name = "tamara-bilensky-ca"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1iriw7pcgy02w"
+s3_prefix = "tamara-bilensky-ca"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=\"prod\""
